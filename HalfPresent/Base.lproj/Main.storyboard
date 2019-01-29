@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HalfPresent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl4-g7-P04">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O4j-Ir-8SY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cl4-g7-P04" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gci-mM-UzC"/>
+                            <constraint firstItem="cl4-g7-P04" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mWK-rp-Hfk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="98"/>
+        </scene>
+        <!--Present View Controller-->
+        <scene sceneID="enm-hd-cEU">
+            <objects>
+                <viewController storyboardIdentifier="PresentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Oqj-HI-hWT" customClass="PresentViewController" customModule="HalfPresent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHb-ra-q84">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNd-xk-Ohm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufs-N8-3Ul">
+                                <rect key="frame" x="0.0" y="667" width="375" height="332"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="332" id="L3q-jm-abW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ufs-N8-3Ul" secondAttribute="trailing" id="75a-HC-V9n"/>
+                            <constraint firstItem="MNd-xk-Ohm" firstAttribute="top" secondItem="OHb-ra-q84" secondAttribute="top" id="9lw-MY-B2b"/>
+                            <constraint firstItem="MNd-xk-Ohm" firstAttribute="leading" secondItem="CcA-hF-goh" secondAttribute="leading" id="EJ9-hU-tWm"/>
+                            <constraint firstItem="MNd-xk-Ohm" firstAttribute="bottom" secondItem="CcA-hF-goh" secondAttribute="bottom" id="Hrs-0h-mih"/>
+                            <constraint firstItem="Ufs-N8-3Ul" firstAttribute="top" secondItem="MNd-xk-Ohm" secondAttribute="bottom" id="dUP-NU-5Id"/>
+                            <constraint firstItem="Ufs-N8-3Ul" firstAttribute="leading" secondItem="OHb-ra-q84" secondAttribute="leading" id="e8y-nd-Cyw"/>
+                            <constraint firstItem="MNd-xk-Ohm" firstAttribute="trailing" secondItem="CcA-hF-goh" secondAttribute="trailing" id="kiB-Y9-e4x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CcA-hF-goh"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="MNd-xk-Ohm" id="B8t-Ya-tMr"/>
+                        <outlet property="mainView" destination="Ufs-N8-3Ul" id="Xh2-qV-595"/>
+                        <outlet property="mainViewTopConstraint" destination="dUP-NU-5Id" id="RbW-V3-USC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRc-6l-hxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
