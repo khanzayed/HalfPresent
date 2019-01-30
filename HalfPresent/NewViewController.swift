@@ -10,7 +10,7 @@ import UIKit
 
 class NewViewController: UIViewController {
 
-    @IBOutlet var customView: UIView!
+    @IBOutlet weak var customView: UIView!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var mainViewTopConstraint: NSLayoutConstraint! //332
@@ -33,6 +33,7 @@ class NewViewController: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         backgroundView.addGestureRecognizer(tapGesture)
+        
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {

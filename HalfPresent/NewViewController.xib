@@ -13,8 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewViewController" customModule="HalfPresent" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundView" destination="6K0-E3-hya" id="SdH-fq-DiQ"/>
+                <outlet property="customView" destination="iN0-l3-epB" id="yUr-QZ-cv2"/>
                 <outlet property="mainView" destination="Q7E-Xe-88X" id="76B-LC-qLX"/>
-                <outlet property="mainViewTopConstraint" destination="ob5-0a-RbI" id="m2e-pX-1bg"/>
+                <outlet property="mainViewTopConstraint" destination="sVy-Vo-fR1" id="531-K0-pZg"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ngK-fB-vjN"/>
             </connections>
         </placeholder>
@@ -24,29 +25,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6K0-E3-hya">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7E-Xe-88X">
-                    <rect key="frame" x="0.0" y="862" width="414" height="332"/>
+                    <rect key="frame" x="0.0" y="896" width="414" height="332"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="332" id="iiZ-bA-TIz"/>
+                        <constraint firstAttribute="height" constant="332" id="vW5-PT-TBU"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="6K0-E3-hya" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="6zN-7A-xdX"/>
-                <constraint firstAttribute="trailing" secondItem="Q7E-Xe-88X" secondAttribute="trailing" id="98p-Az-ye6"/>
-                <constraint firstItem="Q7E-Xe-88X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bq6-zb-Mm6"/>
+                <constraint firstItem="6K0-E3-hya" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="34" id="6zN-7A-xdX"/>
                 <constraint firstItem="6K0-E3-hya" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ccu-b6-e0T"/>
+                <constraint firstItem="Q7E-Xe-88X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VDg-E2-3NV"/>
+                <constraint firstAttribute="trailing" secondItem="Q7E-Xe-88X" secondAttribute="trailing" id="hGc-dv-lm8"/>
                 <constraint firstItem="6K0-E3-hya" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jAc-AM-Kkl"/>
-                <constraint firstItem="Q7E-Xe-88X" firstAttribute="top" secondItem="6K0-E3-hya" secondAttribute="bottom" id="l8r-5I-Qfo"/>
                 <constraint firstItem="6K0-E3-hya" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lQE-Zr-TdM"/>
-                <constraint firstItem="Q7E-Xe-88X" firstAttribute="top" secondItem="6K0-E3-hya" secondAttribute="bottom" id="ob5-0a-RbI"/>
+                <constraint firstItem="Q7E-Xe-88X" firstAttribute="top" secondItem="6K0-E3-hya" secondAttribute="bottom" id="sVy-Vo-fR1"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
         </view>
     </objects>
 </document>

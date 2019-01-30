@@ -22,7 +22,8 @@ class ViewController: UIViewController {
 //        
 //        self.present(newController, animated: true, completion: nil)
         
-        let vc = PresentViewController()
+        let vc = NewViewController()
+        vc.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         vc.modalPresentationStyle = .custom
         present(vc, animated: true, completion: nil)
     }
